@@ -41,3 +41,11 @@ export PS1='\n\[\e${cwdcolor}\][$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][
 # Aliases
 alias ls='ls -l --color'
 alias grep='grep -n --color'
+
+c() {
+    cd "$1"
+    pwd
+    ls
+ }
+ alias l="ls -la --color"
+ alias python="winpty python.exe"
