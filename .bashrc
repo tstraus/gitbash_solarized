@@ -39,7 +39,7 @@ PROMPT_COMMAND='settitle; get_hostname; history -a;'
 export PS1='\n\[\e${cwdcolor}\][$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][${SHORTNAME}]\[\e${inputcolor}\] $ '
 
 # Aliases
-alias ls='ls -l --color'
+alias ls='ls --color'
 alias grep='grep -n --color'
 
 c() {
