@@ -6,3 +6,16 @@ set background=dark
 colorscheme solarized
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+ino " ""<left>
+ino ' ''<left>
+ino ( ()<left>
+ino [ []<left>
+ino { {}<left>
+ino {<CR> {<CR>}<ESC>O
+ino {;<CR> {<CR>};<ESC>O
