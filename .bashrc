@@ -7,7 +7,7 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-function get_hostname {
+get_hostname() {
   export SHORTNAME=${HOSTNAME}
 }
 
@@ -36,7 +36,7 @@ cwdcolor='[0;34m'
 host_name='[1;31m'
 user_color
 PROMPT_COMMAND='settitle; get_hostname; history -a;'
-export PS1='\n\[\e${cwdcolor}\][$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][${SHORTNAME}]\[\e${inputcolor}\] $ '
+export PS1="\n\[\e${cwdcolor}\][$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][$HOSTNAME]\[\e${inputcolor}\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Aliases
 alias ls='ls --color'
