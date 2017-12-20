@@ -36,7 +36,7 @@ cwdcolor='[0;34m'
 host_name='[1;31m'
 user_color
 PROMPT_COMMAND='settitle; get_hostname; history -a;'
-export PS1="\n\[\e${cwdcolor}\][$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][$HOSTNAME]\[\e${inputcolor}\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\n\[\e${cwdcolor}\][\$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][$HOSTNAME]\[\e${inputcolor}\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Aliases
 alias ls='ls --color'
@@ -44,7 +44,6 @@ alias grep='grep -n --color'
 
 c() {
     cd "$1"
-    pwd
     ls
  }
  alias l="ls -la --color"
