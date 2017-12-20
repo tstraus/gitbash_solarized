@@ -38,7 +38,7 @@ git_color='[0;33m'
 key_color='[0;36m'
 user_color
 PROMPT_COMMAND='settitle; get_hostname; history -a;'
-export PS1="\n\[\e${cwdcolor}\][\$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][$HOSTNAME]\[\e${inputcolor}\]\$(parse_git_branch)\[\e${key_color} $ \[\e${inputcolor}"
+export PS1="\n\[\e${cwdcolor}\][\$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\][$HOSTNAME]\[\e${git_color}\]\$(parse_git_branch)\[\e${key_color} $ \[\e${inputcolor}"
 
 # Aliases
 alias ls='ls --color'
