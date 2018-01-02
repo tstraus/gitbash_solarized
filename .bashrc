@@ -27,6 +27,10 @@ function settitle() {
   echo -ne "\e]2;$h\a\e]1;$h\a";
 }
 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # Set directory colors
 eval `dircolors ~/.dir_colors`
 
