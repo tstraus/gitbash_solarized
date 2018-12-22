@@ -46,11 +46,20 @@ export PS1="\n\[\e${cwdcolor}\][\$PWD]\n\[\e${usercolor}\][\u]\[\e${host_name}\]
 
 # Aliases
 alias ls='ls --color'
-alias grep='grep -n --color'
+alias grep='grep --color'
+alias ..='cd ..'
+alias l='ls -la --color'
+
+alias gitl='git log --decorate --oneline --graph --branches --all --color'
+alias gits='git status'
+alias gitd='git diff'
 
 c() {
     cd "$1"
     ls
- }
- alias l="ls -la --color"
- alias python="winpty python.exe"
+}
+
+# windows
+alias python="winpty python.exe"
+# linux
+#alias python='python3'
