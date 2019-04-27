@@ -12,6 +12,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set foldmethod=syntax
+set foldlevel=99
+
+set laststatus=2
+
 ino " ""<left>
 ino ' ''<left>
 ino ( ()<left>
