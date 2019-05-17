@@ -51,6 +51,7 @@ alias ..='cd ..'
 alias l='ls -la --color'
 
 alias gitl='git log --decorate --oneline --graph --branches --all --color'
+alias gitp='git log --decorate --oneline --graph --branches --all --color --patch'
 alias gits='git status'
 alias gitd='git diff'
 
