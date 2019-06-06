@@ -49,8 +49,10 @@ alias ls='ls --color'
 alias grep='grep --color'
 alias ..='cd ..'
 alias l='ls -la --color'
+alias make='make -j'
 
 alias gitl='git log --decorate --oneline --graph --branches --all --color'
+alias gitp='git log --decorate --oneline --graph --branches --all --color --patch'
 alias gits='git status'
 alias gitd='git diff'
 

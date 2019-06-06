@@ -13,6 +13,10 @@ Add or make changes to the following files/folders:</br>
 
 If you clone this repo, make sure you do "ls -a" to see the hidden files.
 
+# YouCompleteMe
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+python3 ./install.py --clang-completer --go-completer --rust-completer
+
 # Credits
 The solarized color scheme was designed by Ethan Schoonover. More info here:</br>
 http://ethanschoonover.com/solarized</br>
